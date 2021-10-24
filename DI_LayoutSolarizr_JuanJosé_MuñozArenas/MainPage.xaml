@@ -34,8 +34,8 @@
             <TextBox x:Name="textBoxUser" Background="White" Grid.Row="1" Grid.Column="0" Margin="200,20,200,10" PlaceholderText="Username"></TextBox>
             <PasswordBox x:Name="pwbPassWord" Background="White" Grid.Row="2" Grid.Column="0" PasswordChar="*" Margin="200,10,200,10"  PlaceholderText="Password"></PasswordBox>
             <TextBlock x:Name="errorName" Text="" Grid.Row="0" Grid.Column="1" Foreground="Red"></TextBlock>
-            <TextBlock x:Name="errorSurname" Text="" Grid.Row="1" Grid.Column="1" Foreground="Red"></TextBlock>
-            <Button Background="LightGray" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Right" Content="Log In" BorderBrush="Black" BorderThickness="1" Margin="0,0,200,0"/>
+            <TextBlock x:Name="errorSurname" HorizontalAlignment="Left" Text="" Grid.Row="1" Grid.Column="1" Foreground="Red"></TextBlock>
+            <Button Background="LightGray" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Right" Content="Log In" BorderBrush="Black" BorderThickness="1" Margin="0,0,200,0" Click="Button_Click"/>
         </Grid>
     </RelativePanel>
 </Page>
