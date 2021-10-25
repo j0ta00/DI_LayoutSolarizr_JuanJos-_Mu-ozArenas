@@ -20,7 +20,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
-                <RowDefinition Height="auto"/>
+                <RowDefinition/>
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
             <RelativePanel  HorizontalAlignment="Center" Grid.Row="0" Grid.Column="0"> 
@@ -31,11 +31,14 @@
                     </Ellipse.Fill>
                 </Ellipse>
             </RelativePanel>
-            <TextBox x:Name="textBoxUser" Background="White" Grid.Row="1" Grid.Column="0" Margin="200,20,200,10" PlaceholderText="Username"></TextBox>
-            <PasswordBox x:Name="pwbPassWord" Background="White" Grid.Row="2" Grid.Column="0" PasswordChar="*" Margin="200,10,200,10"  PlaceholderText="Password"></PasswordBox>
+            <TextBox x:Name="textBoxUser" Background="White" Grid.Row="1" Grid.Column="0" Margin="150,20,150,10" PlaceholderText="Username"></TextBox>
+            <PasswordBox x:Name="pwbPassWord" Background="White" Grid.Row="2" Grid.Column="0" PasswordChar="*" Margin="150,10,150,10"  PlaceholderText="Password"></PasswordBox>
             <TextBlock x:Name="errorName" Text="" Grid.Row="0" Grid.Column="1" Foreground="Red"></TextBlock>
             <TextBlock x:Name="errorSurname" HorizontalAlignment="Left" Text="" Grid.Row="1" Grid.Column="1" Foreground="Red"></TextBlock>
-            <Button Background="LightGray" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Right" Content="Log In" BorderBrush="Black" BorderThickness="1" Margin="0,0,200,0" Click="Button_Click"/>
+            <StackPanel Grid.Column="0" Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
+                <RadioButton Background="White" BorderThickness="5" BorderBrush="White" CornerRadius="3" Margin="-70,0,200,0"></RadioButton>
+                <Button Background="LightGray" Content="Log In" BorderBrush="Black" BorderThickness="1"  Click="Button_Click"/>
+            </StackPanel>
         </Grid>
     </RelativePanel>
 </Page>
