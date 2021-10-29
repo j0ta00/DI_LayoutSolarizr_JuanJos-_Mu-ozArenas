@@ -26,5 +26,10 @@ namespace DI_LayoutSolarizr_JuanJosé_MuñozArenas
         {
             this.InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(BlankPage1));
+        }
     }
 }

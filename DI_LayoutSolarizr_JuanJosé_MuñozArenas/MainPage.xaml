@@ -4,10 +4,8 @@
     xmlns:local="using:DI_LayoutSolarizr_JuanJosé_MuñozArenas"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
-    <Page.Background>
-        <ImageBrush Stretch="Fill" ImageSource="/Assets/solarPannelImageAtBottom.jpg"/>
-    </Page.Background>
+    mc:Ignorable="d"
+      Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <RelativePanel>
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup>
@@ -47,7 +45,7 @@
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
         <RelativePanel.Background>
-            <SolidColorBrush Color="Black" Opacity="0.9"></SolidColorBrush>
+            <ImageBrush Stretch="Fill" ImageSource="/Assets/solarPannelImageAtBottom.jpg"/>
         </RelativePanel.Background>
         <StackPanel RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignHorizontalCenterWithPanel="True" VerticalAlignment="Center">
             <StackPanel Orientation="Horizontal">

@@ -30,7 +30,7 @@
                     <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
                 <ToggleSwitch HorizontalAlignment="Left" Grid.Row="0" Grid.Column="0" x:Name="tgsRemember" OnContent="Remember me" OffContent="Don't remember me"  Margin="35,0,35,0"></ToggleSwitch>
-                <Button Grid.Row="0" HorizontalAlignment="Right" Grid.Column="1" CornerRadius="3" RelativePanel.RightOf="tgsRemember"  Margin="35,0,35,0">Login in</Button>
+                <Button Grid.Row="0" HorizontalAlignment="Right" Grid.Column="1" CornerRadius="3" RelativePanel.RightOf="tgsRemember"  Margin="35,0,35,0" Click="Button_Click">Login in</Button>
             </Grid>
         </StackPanel>
         

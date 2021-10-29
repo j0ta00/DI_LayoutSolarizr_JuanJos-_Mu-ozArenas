@@ -24,25 +24,11 @@ namespace DI_LayoutSolarizr_JuanJosé_MuñozArenas
     /// </summary>
     public sealed partial class BlankPage1 : Page
     {
-        private List<Appoiment> appoiments = new List<Appoiment>();
+        
         public BlankPage1()
         {
             this.InitializeComponent();
-            Appoiments.Add(new Appoiment("Instalación", "C/Alvar Nuñez Cabeza de Vaca Nº11", "ERER"));
-            Appoiments.Add(new Appoiment("Reparación", "C/Alvar Nuñez Cabeza de Vaca Nº11", "ERER"));
-            Appoiments.Add(new Appoiment("Incidencia con equipo, posiblemenete necesite reparación", "C/Alvar Nuñez Cabeza de Vaca Nº11", "ERER"));
-            Appoiments.Add(new Appoiment("Instalación", "C/Alvar Nuñez Cabeza de Vaca Nº11", "ERER"));
-            Appoiments.Add(new Appoiment("Reparación", "C/Alvar Nuñez Cabeza de Vaca Nº11", "ERER"));
-            Appoiments.Add(new Appoiment("Incidencia con equipo, posiblemenete necesite reparación", "C/Alvar Nuñez Cabeza de Vaca Nº11", "ERER"));
-            Appoiments.Add(new Appoiment("Instalación", "C/Alvar Nuñez Cabeza de Vaca Nº11", "ERER"));
-            Appoiments.Add(new Appoiment("Reparación", "C/Alvar Nuñez Cabeza de Vaca Nº11", "ERER"));
-            Appoiments.Add(new Appoiment("Incidencia con equipo, posiblemenete necesite reparación", "C/Alvar Nuñez Cabeza de Vaca Nº11", "ERER"));
-            Appoiments.Add(new Appoiment("Instalación", "C/Alvar Nuñez Cabeza de Vaca Nº11", "ERER"));
-            Appoiments.Add(new Appoiment("Reparación", "C/Alvar Nuñez Cabeza de Vaca Nº11", "ERER"));
-            Appoiments.Add(new Appoiment("Incidencia con equipo, posiblemenete necesite reparación", "C/Alvar Nuñez Cabeza de Vaca Nº11", "ERER"));
-        }
-        public List<Appoiment> Appoiments{
-            get{ return appoiments;}
+            
         }
     }
 }

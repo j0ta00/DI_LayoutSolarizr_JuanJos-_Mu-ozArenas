@@ -5,42 +5,49 @@
     xmlns:local="using:DI_LayoutSolarizr_JuanJosé_MuñozArenas"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
-    <Page.Background>
-        <ImageBrush Stretch="Fill" ImageSource="/Assets/solarPannelImageAtBottom.jpg"/>
-    </Page.Background>
+    xmlns:vm="using:DI_LayoutSolarizr_JuanJosé_MuñozArenas.ViewModels"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.DataContext>
+        <vm:AppoimentsPageViewModel/>
+    </Page.DataContext>
     <RelativePanel x:Name="x">
         <RelativePanel.Background>
-            <SolidColorBrush Color="Black" Opacity="0.8"></SolidColorBrush>
+            <ImageBrush Stretch="Fill" ImageSource="/Assets/solarPannelImageAtBottom.jpg"/>
         </RelativePanel.Background>
-        <StackPanel Orientation="Horizontal"  RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignLeftWithPanel="True">
-            <NavigationView  x:Name="nvSample" IsPaneOpen="False" IsBackButtonVisible="Collapsed" IsSettingsVisible="False"  IsPaneVisible="True" PaneDisplayMode="LeftCompact" IsTabStop="False">
-                <NavigationView.PaneToggleButtonStyle>
-                    <Style TargetType="Button" BasedOn="{StaticResource PaneToggleButtonStyle}">
-                        <Setter Property="Foreground" Value="White"/>
-                    </Style>
-                </NavigationView.PaneToggleButtonStyle>
+        <Grid RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <GridView x:Name="grid" ItemsSource="{Binding Appoiments}" Grid.Row="0" Grid.Column="1" IsItemClickEnabled="True" IsSwipeEnabled="true" SelectionMode="Single">
+                <GridView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <ItemsWrapGrid x:Name="MaxItemsWrapGrid"
+                           MaximumRowsOrColumns="3"
+                           Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </GridView.ItemsPanel>
+                <GridView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Name}"></TextBlock>
+                            <TextBlock Text="{Binding Address}"></TextBlock>
+                            <TextBlock Text="{Binding Details}"></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>
+            <NavigationView Grid.Row="0" OpenPaneLength="180" Grid.Column="0"  x:Name="nvSample" IsPaneOpen="False" IsBackButtonVisible="Collapsed" IsSettingsVisible="False"  IsPaneVisible="True" PaneDisplayMode="LeftCompact" IsTabStop="False">
                 <NavigationView.MenuItems>
-                    <NavigationViewItem Icon="Mail" Foreground="White" Content="Menu Item1" Tag="SamplePage1" />
-                    <NavigationViewItem Icon="Camera" Foreground="White" Content="Menu Item2" Tag="SamplePage2" />
-                    <NavigationViewItem Icon="Home" Foreground="White" Content="Menu Item3" Tag="SamplePage3"/>
+                    <NavigationViewItem Icon="Mail"  Content="Menu Item1" Tag="SamplePage1" />
+                    <NavigationViewItem Icon="Camera"  Content="Menu Item2" Tag="SamplePage2" />
+                    <NavigationViewItem Icon="Home" Content="Menu Item3" Tag="SamplePage3"/>
                 </NavigationView.MenuItems>
             </NavigationView>
-            <ListView  Grid.ColumnSpan="2" Grid.RowSpan="2" x:Name="lsvAppoiments"  Background="LightGray" ItemsSource="{x:Bind Appoiments}" BorderBrush="White" BorderThickness="2" Margin="50,50,0,50" Padding="0,5,10,5">
-                <ListView.ItemContainerStyle>
-                    <Style TargetType="ListViewItem">
-                        <Setter Property="Template">
-                            <Setter.Value>
-                                <ControlTemplate TargetType="ListViewItem">
-                                    <Border Name="Border" BorderBrush="Black" BorderThickness="0.5" Margin="0,10,0,10" Width="auto" Padding="7,0,7,0">
-                                        <ContentPresenter />
-                                    </Border>
-                                </ControlTemplate>
-                            </Setter.Value>
-                        </Setter>
-                    </Style>
-                </ListView.ItemContainerStyle>
-            </ListView>
-        </StackPanel>
+        </Grid>
     </RelativePanel>
 </Page>
