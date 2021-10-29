@@ -11,17 +11,17 @@
         <StackPanel RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" VerticalAlignment="Center">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <TextBlock FontWeight="Bold" FontStyle="Italic" FontSize="30" VerticalAlignment="Center" Margin="30,0,0,0">SOLARIZR</TextBlock>
-                <Ellipse x:Name="eLogo" MinHeight="60" MinWidth="57" Margin="10,0,0,0">
+                <Ellipse x:Name="eLogo" MinHeight="60" MinWidth="85">
                     <Ellipse.Fill>
                         <ImageBrush ImageSource="/Assets/logo.jpg"/>
                     </Ellipse.Fill>
                 </Ellipse>
             </StackPanel>
             <TextBlock HorizontalAlignment="Center" >Sign in with your organizational account</TextBlock>
-            <TextBox PlaceholderText="User" MaxWidth="800" Margin="0,20,0,20"></TextBox>
-            <PasswordBox PlaceholderText="Password"  MaxWidth="800" Margin="0,20,0,20"></PasswordBox>
-            <TextBlock Foreground="SteelBlue" HorizontalAlignment="Center" Margin="0,0,0,20">Did you forget your password?</TextBlock>
-            <Grid >
+            <TextBox PlaceholderText="User" MaxWidth="600" Margin="50,20,50,20"></TextBox>
+            <PasswordBox PlaceholderText="Password"  MaxWidth="600" Margin="50,20,50,20"></PasswordBox>
+            <TextBlock Foreground="SteelBlue" HorizontalAlignment="Center" Margin="30,0,0,20">Did you forget your password?</TextBlock>
+            <Grid MaxWidth="675" >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
@@ -29,8 +29,8 @@
                 <Grid.RowDefinitions>
                     <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
-                <ToggleSwitch HorizontalAlignment="Center" Grid.Row="0" Grid.Column="0" x:Name="tgsRemember" OnContent="Remember me" OffContent="Don't remember me"></ToggleSwitch>
-                <Button Grid.Row="0" HorizontalAlignment="Center" Grid.Column="1" CornerRadius="3" RelativePanel.RightOf="tgsRemember">Login in</Button>
+                <ToggleSwitch HorizontalAlignment="Left" Grid.Row="0" Grid.Column="0" x:Name="tgsRemember" OnContent="Remember me" OffContent="Don't remember me"  Margin="35,0,35,0"></ToggleSwitch>
+                <Button Grid.Row="0" HorizontalAlignment="Right" Grid.Column="1" CornerRadius="3" RelativePanel.RightOf="tgsRemember"  Margin="35,0,35,0">Login in</Button>
             </Grid>
         </StackPanel>
         
