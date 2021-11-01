@@ -121,6 +121,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Appoiment.cs" />
+    <Compile Include="Costumer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\DI_EntitiesSolarz.rd.xml" />
   </ItemGroup>

@@ -22,13 +22,19 @@ namespace DI_LayoutSolarizr_JuanJosé_MuñozArenas
     /// <summary>
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class BlankPage1 : Page
+    public sealed partial class ViewAppoiments : Page
     {
         
-        public BlankPage1()
+        public ViewAppoiments()
         {
             this.InitializeComponent();
             
+        }
+
+        private void grid_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Appoiment selected = e.ClickedItem as Appoiment; 
+            this.Frame.Navigate(typeof(ViewAppoimentsDetails),selected);
         }
     }
 }

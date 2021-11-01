@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DI_EntitiesSolarz;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,35 +9,30 @@ namespace DI_LayoutSolarizr_JuanJosé_MuñozArenas
     public class Appoiment
     {
         #region privates atributes
-        private String name;
-        private String address;
-        private String details;
+        private DateTime date;
+        private string appoimentType;
+        private Costumer costumer;
         #endregion
 
         #region constructors
         public Appoiment()
         {
-            this.name = "default";
-            this.address = "default address";
-            this.details = "empty details";
+            this.date= DateTime.Now;
+            this.appoimentType = "default appoiment type";
+            this.costumer = new Costumer();
         }
-        public Appoiment(String name, String address, String details)
+        public Appoiment(DateTime date, string appoimentType, Costumer costumer)
         {
-            this.name = name;
-            this.address = address;
-            this.details = details;
+            this.date = date;
+            this.appoimentType = appoimentType;
+            this.costumer = costumer;
         }
         #endregion
 
         #region getters & setters
-        public string Name { get => name; set => name = value; }
-        public string Address { get => address; set => address = value; }
-        public string Details { get => details; set => details = value; }
-
-        public override string ToString()
-        {
-            return $"{Name}\n{Address}";
-        }
+        public DateTime Date { get => date; set => date = value; }
+        public string AppoimentType { get => appoimentType; set => appoimentType = value; }
+        public Costumer Costumer { get => costumer; set => costumer = value; }
         #endregion
     }
     

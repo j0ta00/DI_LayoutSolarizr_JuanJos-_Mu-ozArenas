@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI_LayoutSolarizr_JuanJosé
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI_EntitiesSolarz", "DI_EntitiesSolarz\DI_EntitiesSolarz.csproj", "{A6BE346E-0B85-49DD-B94B-29CCD9AEC64C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DI_DALSolarizr", "DI_DALSolarizr\DI_DALSolarizr.csproj", "{6CAC9108-F31A-42A3-A0DA-EFC1D0435B09}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,26 @@ Global
 		{A6BE346E-0B85-49DD-B94B-29CCD9AEC64C}.Release|x64.Build.0 = Release|x64
 		{A6BE346E-0B85-49DD-B94B-29CCD9AEC64C}.Release|x86.ActiveCfg = Release|x86
 		{A6BE346E-0B85-49DD-B94B-29CCD9AEC64C}.Release|x86.Build.0 = Release|x86
+		{6CAC9108-F31A-42A3-A0DA-EFC1D0435B09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CAC9108-F31A-42A3-A0DA-EFC1D0435B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CAC9108-F31A-42A3-A0DA-EFC1D0435B09}.Debug|ARM.ActiveCfg = Debug|ARM
+		{6CAC9108-F31A-42A3-A0DA-EFC1D0435B09}.Debug|ARM.Build.0 = Debug|ARM
+		{6CAC9108-F31A-42A3-A0DA-EFC1D0435B09}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{6CAC9108-F31A-42A3-A0DA-EFC1D0435B09}.Debug|ARM64.Build.0 = Debug|ARM64
+		{6CAC9108-F31A-42A3-A0DA-EFC1D0435B09}.Debug|x64.ActiveCfg = Debug|x64
+		{6CAC9108-F31A-42A3-A0DA-EFC1D0435B09}.Debug|x64.Build.0 = Debug|x64
+		{6CAC9108-F31A-42A3-A0DA-EFC1D0435B09}.Debug|x86.ActiveCfg = Debug|x86
+		{6CAC9108-F31A-42A3-A0DA-EFC1D0435B09}.Debug|x86.Build.0 = Debug|x86
+		{6CAC9108-F31A-42A3-A0DA-EFC1D0435B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CAC9108-F31A-42A3-A0DA-EFC1D0435B09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CAC9108-F31A-42A3-A0DA-EFC1D0435B09}.Release|ARM.ActiveCfg = Release|ARM
+		{6CAC9108-F31A-42A3-A0DA-EFC1D0435B09}.Release|ARM.Build.0 = Release|ARM
+		{6CAC9108-F31A-42A3-A0DA-EFC1D0435B09}.Release|ARM64.ActiveCfg = Release|ARM64
+		{6CAC9108-F31A-42A3-A0DA-EFC1D0435B09}.Release|ARM64.Build.0 = Release|ARM64
+		{6CAC9108-F31A-42A3-A0DA-EFC1D0435B09}.Release|x64.ActiveCfg = Release|x64
+		{6CAC9108-F31A-42A3-A0DA-EFC1D0435B09}.Release|x64.Build.0 = Release|x64
+		{6CAC9108-F31A-42A3-A0DA-EFC1D0435B09}.Release|x86.ActiveCfg = Release|x86
+		{6CAC9108-F31A-42A3-A0DA-EFC1D0435B09}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,4 @@
-﻿<Page x:Class="DI_LayoutSolarizr_JuanJosé_MuñozArenas.MainPage"
+﻿<Page x:Class="DI_LayoutSolarizr_JuanJosé_MuñozArenas.ViewButtonLogin"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:DI_LayoutSolarizr_JuanJosé_MuñozArenas"
@@ -14,7 +14,7 @@
                         <AdaptiveTrigger MinWindowWidth="0"></AdaptiveTrigger>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="btnLogin.FontSize" Value="10"></Setter>
+                        <Setter Target="btnLogin.FontSize" Value="20"></Setter>
                         <Setter Target="txtSolarizr.FontSize" Value="40"></Setter>
                         <Setter Target="eLogo.MinWidth" Value="95"></Setter>
                         <Setter Target="eLogo.MinHeight" Value="90"></Setter>
@@ -25,7 +25,7 @@
                         <AdaptiveTrigger MinWindowWidth="1280" MinWindowHeight="720"></AdaptiveTrigger>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="btnLogin.FontSize" Value="20"></Setter>
+                        <Setter Target="btnLogin.FontSize" Value="30"></Setter>
                         <Setter Target="txtSolarizr.FontSize" Value="60"></Setter>
                         <Setter Target="eLogo.MinWidth" Value="115"></Setter>
                         <Setter Target="eLogo.MinHeight" Value="110"></Setter>
@@ -36,7 +36,7 @@
                         <AdaptiveTrigger MinWindowWidth="1920" MinWindowHeight="1080"></AdaptiveTrigger>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="btnLogin.FontSize" Value="30"></Setter>
+                        <Setter Target="btnLogin.FontSize" Value="40"></Setter>
                         <Setter Target="txtSolarizr.FontSize" Value="80"></Setter>
                         <Setter Target="eLogo.MinWidth" Value="135"></Setter>
                         <Setter Target="eLogo.MinHeight" Value="130"></Setter>
@@ -57,7 +57,7 @@
                 </Ellipse>
             </StackPanel>
             <Button x:Name="btnLogin" Content="Login"  Background="white" HorizontalAlignment="Center"   Margin="0,20,0,0" CornerRadius="3" Click="Button_Click">
-                <Button.Resources>
+                <Button.Resources><!--Esto es para cambiar el color que tiene el botón cuando el ratón está por encima, ya que por defecto lo ponía negro-->
                     <ResourceDictionary>
                         <ResourceDictionary.ThemeDictionaries>
                             <ResourceDictionary x:Key="Light">
