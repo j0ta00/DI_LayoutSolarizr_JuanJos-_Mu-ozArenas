@@ -27,6 +27,10 @@ namespace DI_LayoutSolarizr_JuanJosé_MuñozArenas
         {
             this.InitializeComponent();
         }
+        /// <summary>
+        /// Method that set text of the appoiment selected before, so the user can see the appoiment details
+        /// </summary>
+        /// <param name="e"></param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
 
@@ -38,12 +42,20 @@ namespace DI_LayoutSolarizr_JuanJosé_MuñozArenas
             txtName.Text += param.Costumer.Name;
             txtPhoneNumber.Text += param.Costumer.PhoneNumber;
         }
-
+        /// <summary>
+        /// Method tap, is an event associate to an appBarButton that changue current page, to previous page
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AppBarButton_TappedBack(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(ViewAppoiments));
         }
-
+        /// <summary>
+        /// Method tap, is an event associate to an appBarButton that show a content dialog, telling the user that the information has been sent
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void AppBarButton_TappedSend(object sender, TappedRoutedEventArgs e)
         {
             ContentDialog informationSending = new ContentDialog()

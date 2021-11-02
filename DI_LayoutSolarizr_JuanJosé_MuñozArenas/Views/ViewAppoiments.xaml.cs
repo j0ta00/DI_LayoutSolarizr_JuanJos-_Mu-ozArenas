@@ -30,7 +30,12 @@ namespace DI_LayoutSolarizr_JuanJosé_MuñozArenas
             this.InitializeComponent();
             
         }
-
+        /// <summary>
+        /// Method click, is an event associate to a gridView that contains every appoiments and when you click in one of them,
+        /// the actual page changue to another page that show the details of the appoiment
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void grid_ItemClick(object sender, ItemClickEventArgs e)
         {
             Appoiment selected = e.ClickedItem as Appoiment; 

@@ -26,7 +26,13 @@ namespace DI_LayoutSolarizr_JuanJosé_MuñozArenas
         {
             this.InitializeComponent();
         }
-
+        /// <summary>
+        /// Method click, is an event associate to button and when you click it,
+        /// if one of the fields is empty, a content dialog alert to the user telling to him that each field must be fill it 
+        /// with valid information
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
             ContentDialog fieldsEmpty = new ContentDialog()
@@ -42,7 +48,11 @@ namespace DI_LayoutSolarizr_JuanJosé_MuñozArenas
                 this.Frame.Navigate(typeof(ViewAppoiments));
             }
         }
-           
+        /// <summary>
+        /// Method tap, is an event associate to an appBarButton that changue current page, to previous page
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AppBarButton_TappedBack(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(ViewButtonLogin));

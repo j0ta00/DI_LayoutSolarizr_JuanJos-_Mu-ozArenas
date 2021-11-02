@@ -26,7 +26,12 @@ namespace DI_LayoutSolarizr_JuanJosé_MuñozArenas
         {
             this.InitializeComponent();
         }
-
+        /// <summary>
+        /// Method click, is an event associate to button and when you click it,
+        /// the current page changue to another page that show the login
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(ViewLogin));

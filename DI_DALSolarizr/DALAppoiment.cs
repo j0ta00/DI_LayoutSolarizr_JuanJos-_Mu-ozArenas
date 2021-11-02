@@ -11,7 +11,10 @@ namespace DI_DALSolarizr
     public class DALAppoiment
     {
 
-
+        /// <summary>
+        /// Method that simulate a connection to a database, returning a list of appoiments (that should be in the database)
+        /// </summary>
+        /// <returns> List<Appoiment> getListOfAppoiments() </returns>
         public static List<Appoiment> getListOfAppoiments()
         {
             List<Appoiment> appoiments = new List<Appoiment>();

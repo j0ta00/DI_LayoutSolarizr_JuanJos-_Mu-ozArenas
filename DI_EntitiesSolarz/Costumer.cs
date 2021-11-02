@@ -27,6 +27,7 @@ namespace DI_EntitiesSolarz
         }
 
         #endregion
+
         #region getters&setters
         public string Name { get => name; set => name = value; }
         public string Address { get => address; set => address = value; }
