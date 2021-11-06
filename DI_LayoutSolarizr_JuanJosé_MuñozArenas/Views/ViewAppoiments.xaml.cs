@@ -1,4 +1,5 @@
 ﻿using DI_LayoutSolarizr_JuanJosé_MuñozArenas;
+using DI_LayoutSolarizr_JuanJosé_MuñozArenas.Views;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -40,6 +41,28 @@ namespace DI_LayoutSolarizr_JuanJosé_MuñozArenas
         {
             Appoiment selected = e.ClickedItem as Appoiment; 
             this.Frame.Navigate(typeof(ViewAppoimentsDetails),selected);
+        }
+
+        /// <summary>
+        /// Method that is activated when you click a button of a navigationView,
+        /// this method changue the current page for another depending on what was selected
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void nvAppoiments_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
+        {
+            if (args.IsSettingsInvoked)
+            {
+                this.Frame.Navigate(typeof(ViewInConstruction));
+            }
+            else if(args.InvokedItemContainer.Content.Equals("Camera"))
+            {
+                this.Frame.Navigate(typeof(ViewInConstruction));
+            }
+            else if (args.InvokedItemContainer.Content.Equals("Users")) 
+            {
+                this.Frame.Navigate(typeof(ViewUserDetails));
+            }
         }
     }
 }

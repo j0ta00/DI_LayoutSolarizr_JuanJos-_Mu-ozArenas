@@ -90,11 +90,11 @@
                     </DataTemplate>
                 </GridView.ItemTemplate>
             </GridView>
-            <NavigationView Grid.Row="0" OpenPaneLength="180" Grid.Column="0" x:Name="nvSample" IsPaneOpen="False" IsBackButtonVisible="Collapsed" IsSettingsVisible="True" IsPaneVisible="True" PaneDisplayMode="LeftCompact" IsTabStop="False">
+            <NavigationView Grid.Row="0" OpenPaneLength="180" ItemInvoked="nvAppoiments_ItemInvoked" Grid.Column="0" x:Name="nvAppoiments" IsPaneOpen="False" IsBackButtonVisible="Collapsed" IsSettingsVisible="True" IsPaneVisible="True" PaneDisplayMode="LeftCompact" IsTabStop="False">
                 <NavigationView.MenuItems>
                     <NavigationViewItem x:Name="HomeAppoiments" Icon="Home" Content="Home"/>
-                    <NavigationViewItem Icon="Contact"  Content="Users"/>
-                    <NavigationViewItem Icon="Camera"  Content="Camera"/>
+                    <NavigationViewItem x:Name="ContactButton" Icon="Contact"  Content="Users"/>
+                    <NavigationViewItem x:Name="CameraButton" Icon="Camera"  Content="Camera"/>
                 </NavigationView.MenuItems>
             </NavigationView>
         </Grid>

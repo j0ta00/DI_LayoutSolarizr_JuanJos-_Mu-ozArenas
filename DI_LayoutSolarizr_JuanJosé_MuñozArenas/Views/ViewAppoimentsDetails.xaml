@@ -74,7 +74,7 @@
             <TextBox x:Name="txtNotes" PlaceholderForeground="White" PlaceholderText="Write Notes Here" AutomationProperties.Name="multi-line TextBox" TextWrapping="Wrap" AcceptsReturn="True" IsSpellCheckEnabled="True"  ScrollViewer.VerticalScrollBarVisibility="Auto" 
                          ScrollViewer.IsVerticalRailEnabled="True" Width="auto" MinHeight="100" MaxHeight="250"/>
             <StackPanel x:Name="stkButtons" Orientation="Horizontal" HorizontalAlignment="Right" Padding="0,5,2,0">
-                <AppBarButton Icon="Camera" Background="Gray"  MaxWidth="40" MaxHeight="40" />
+                <AppBarButton Icon="Camera" Background="Gray"  MaxWidth="40" MaxHeight="40" Tapped="AddImage_Tapped" />
                     <AppBarButton Icon="Send" Background="gray" MaxWidth="40" MaxHeight="40" Margin="10,0,0,0" Tapped="AppBarButton_TappedSend"/>
             </StackPanel>
             <!-- A pesar de haber especificado el token, a veces en la preview sale que no está especificado, pero una vez se ejecuta la app, el aviso desaparece, supongo que entonces es cuando detectará que si hay un token especificado.-->
@@ -109,7 +109,7 @@
                         <TextBox AutomationProperties.Name="multi-line TextBox" AcceptsReturn="True" IsSpellCheckEnabled="True"  ScrollViewer.VerticalScrollBarVisibility="Auto" 
                          ScrollViewer.IsVerticalRailEnabled="True" Width="auto" MinHeight="100" MaxHeight="120"/>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Padding="0,10,2,0">
-                            <AppBarButton Icon="Camera" Background="Gray"  MaxWidth="40" MaxHeight="40"/>
+                                <AppBarButton Icon="Camera" Background="Gray"  MaxWidth="40" MaxHeight="40" Tapped="AddImage_Tapped"/>
                             <AppBarButton Icon="Send" Background="Gray"  MaxWidth="40" MaxHeight="40" Margin="10,0,0,0" Tapped="AppBarButton_TappedSend"/>
                         </StackPanel>
                     </StackPanel>

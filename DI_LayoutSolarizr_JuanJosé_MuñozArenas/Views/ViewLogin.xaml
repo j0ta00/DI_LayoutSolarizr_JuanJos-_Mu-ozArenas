@@ -8,7 +8,6 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <RelativePanel>
-        <AppBarButton Background="Gray"  RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignLeftWithPanel="True"  Icon="Back" MaxWidth="40" MaxHeight="40" Margin="10,10,0,0" Tapped="AppBarButton_TappedBack"></AppBarButton>
         <StackPanel RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" VerticalAlignment="Center">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <TextBlock FontWeight="Bold" FontStyle="Italic" FontSize="30" VerticalAlignment="Center" Margin="30,0,0,0">SOLARIZR</TextBlock>
@@ -21,7 +20,9 @@
             <TextBlock HorizontalAlignment="Center" >Sign in with your organizational account</TextBlock>
             <TextBox x:Name="txtUser" PlaceholderText="User" MaxWidth="600" Margin="50,20,50,20"></TextBox>
             <PasswordBox x:Name="txtPassword" PlaceholderText="Password"  MaxWidth="600" Margin="50,20,50,20"></PasswordBox>
-            <TextBlock Foreground="SteelBlue" HorizontalAlignment="Center" Margin="30,0,0,20">Did you forget your password?</TextBlock>
+            <TextBlock HorizontalAlignment="Center">
+                <Hyperlink NavigateUri="https://dotnet.microsoft.com/apps/aspnet">Did you forget your password?</Hyperlink>
+            </TextBlock>
             <Grid MaxWidth="675" >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition></ColumnDefinition>

@@ -48,6 +48,9 @@ namespace DI_LayoutSolarizr_JuanJosé_MuñozArenas
                 this.Frame.Navigate(typeof(ViewAppoiments));
             }
         }
+
+
+        [Obsolete("AppBarButton_TappedBack is deprecated, the new default page is the current page (the login) so you can't go back")]
         /// <summary>
         /// Method tap, is an event associate to an appBarButton that changue current page, to previous page
         /// </summary>
@@ -57,5 +60,6 @@ namespace DI_LayoutSolarizr_JuanJosé_MuñozArenas
         {
             this.Frame.Navigate(typeof(ViewButtonLogin));
         }
+        
     }
 }

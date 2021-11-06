@@ -43,7 +43,7 @@ namespace DI_LayoutSolarizr_JuanJosé_MuñozArenas
             txtPhoneNumber.Text += param.Costumer.PhoneNumber;
         }
         /// <summary>
-        /// Method tap, is an event associate to an appBarButton that changue current page, to previous page
+        /// Tap method, is an event associate to an appBarButton that changue current page, to previous page
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -52,7 +52,7 @@ namespace DI_LayoutSolarizr_JuanJosé_MuñozArenas
             this.Frame.Navigate(typeof(ViewAppoiments));
         }
         /// <summary>
-        /// Method tap, is an event associate to an appBarButton that show a content dialog, telling the user that the information has been sent
+        /// Tap method, is an event associate to an appBarButton that show a content dialog, telling the user that the information has been sent
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -65,6 +65,16 @@ namespace DI_LayoutSolarizr_JuanJosé_MuñozArenas
             };
             await informationSending.ShowAsync();
           
+        }
+
+        private async void AddImage_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            var picker = new Windows.Storage.Pickers.FileOpenPicker();
+            picker.SuggestedStartLocation = Windows.Storage.Pickers.PickerLocationId.PicturesLibrary;
+            picker.FileTypeFilter.Add(".jpg");
+            picker.FileTypeFilter.Add(".jpeg");
+            picker.FileTypeFilter.Add(".png");
+            Windows.Storage.StorageFile file = await picker.PickSingleFileAsync();
         }
     }
 }    
